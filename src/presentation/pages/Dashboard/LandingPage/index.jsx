@@ -6,6 +6,7 @@ import DashboardLandingPageStyles, {
 import { Container, Column } from "../../../components/Grid/styles";
 import { Text } from "../../../components/Typography/styles";
 import PieChart from "./Charts/Doughnut";
+import Progress from "./Charts/Progress";
 const DashboardLandingPage = () => (
   <DashboardLandingPageStyles>
     <Container gutter={[16, { xs: 8, sm: 16, md: 24, lg: 32 }]}>
@@ -17,10 +18,16 @@ const DashboardLandingPage = () => (
           General information about your plan.
         </Description>
       </Column>
-      <Column span={8} align="start" data-aos="zoom-in">
-        <ChartCard title={<Text color="white">Average By Type</Text>}>
+      <Column span={12} xl={8} align="start">
+        <ChartCard
+          title={<Text color="white">Average By Type</Text>}
+          data-aos="zoom-in"
+        >
           <PieChart />
         </ChartCard>
+      </Column>
+      <Column span={6} xl={6} justify="start" data-aos="zoom-in">
+        <Progress />
       </Column>
     </Container>
   </DashboardLandingPageStyles>

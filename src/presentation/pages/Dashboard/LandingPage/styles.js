@@ -17,5 +17,7 @@ export const Title = styled(Text)`
 export const Description = styled(Text)``;
 
 export const ChartCard = styled(Card)`
-  background: ${({ theme }) => theme.dashboard.hoverColor};
+  background: ${({ theme }) => theme.dashboard.backgroundPrimaryColor};
+  box-shadow: ${({ theme }) => theme.shadow};
+  border: none;
 `;

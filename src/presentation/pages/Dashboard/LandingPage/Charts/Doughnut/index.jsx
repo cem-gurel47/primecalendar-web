@@ -5,6 +5,8 @@ const DoughnutChart = () => (
   <Doughnut
     data={data}
     options={{
+      responsiveAnimationDuration: 1000,
+
       legend: {
         display: true,
         position: "right",

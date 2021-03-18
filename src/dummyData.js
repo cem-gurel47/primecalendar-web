@@ -1,3 +1,5 @@
+import moment from "moment";
+
 export const dummyEmail = "gurel.cem374@hotmail.com";
 export const dummyPassword = "tilko2000";
 export const firstName = "Cem";
@@ -22,3 +24,5 @@ export const data = {
   // These labels appear in the legend and in the tooltips when hovering different arcs
   labels: ["Study", "Sports", "Leisure", "Books", "Social Activity"],
 };
+
+//Timer

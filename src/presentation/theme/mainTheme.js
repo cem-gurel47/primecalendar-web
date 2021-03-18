@@ -22,6 +22,7 @@ const mainTheme = {
   headerHeightMin: "60px",
 
   transition: "0.2s ease-in",
+  shadow: "0px 0px 58px -3px rgba(30, 30, 60, 0.55)",
 };
 
 export default mainTheme;

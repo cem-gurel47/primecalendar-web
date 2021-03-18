@@ -45,7 +45,7 @@ const JointStyling = css`
         case "brown":
           return FontTheme.Color.brown;
         case "blue":
-          return FontTheme.color.blue;
+          return FontTheme.Color.blue;
         default:
           return color;
       }
