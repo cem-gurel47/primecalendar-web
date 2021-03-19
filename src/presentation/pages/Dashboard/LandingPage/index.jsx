@@ -7,6 +7,8 @@ import { Container, Column } from "../../../components/Grid/styles";
 import { Text } from "../../../components/Typography/styles";
 import PieChart from "./Charts/Doughnut";
 import Progress from "./Charts/Progress";
+import Timer from "./Charts/Timer";
+import { dummyTimerData } from "../../../../dummyData";
 const DashboardLandingPage = () => (
   <DashboardLandingPageStyles>
     <Container gutter={[16, { xs: 8, sm: 16, md: 24, lg: 32 }]}>
@@ -26,8 +28,9 @@ const DashboardLandingPage = () => (
           <PieChart />
         </ChartCard>
       </Column>
-      <Column span={6} xl={6} justify="start" data-aos="zoom-in">
+      <Column span={12} xl={6} justify="start" data-aos="zoom-in">
         <Progress />
+        <Timer finishDate={dummyTimerData} />
       </Column>
     </Container>
   </DashboardLandingPageStyles>

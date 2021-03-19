@@ -9,7 +9,7 @@ export default styled(Container)`
   border-radius: ${({ theme }) => theme.borderRadius};
   width: 100%;
   max-width: 220px;
-  height: 130px;
+  height: 122px;
 `;
 
 export const ProgressBar = styled(CircularProgress)`
@@ -20,7 +20,7 @@ export const ProgressBar = styled(CircularProgress)`
 `;
 
 export const Img = styled.img`
-  top: 48px;
+  top: 45px;
   left: 70px;
   position: absolute;
   width: 40px;

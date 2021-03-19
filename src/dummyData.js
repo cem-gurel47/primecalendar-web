@@ -26,3 +26,4 @@ export const data = {
 };
 
 //Timer
+export const dummyTimerData = moment().add(1, "week");
