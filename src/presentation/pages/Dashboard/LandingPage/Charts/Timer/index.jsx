@@ -1,4 +1,5 @@
 import TimerStyles from "../Progress/styles";
+import { Img, TimerContainer } from "./styles";
 import { Text } from "../../../../../components/Typography/styles";
 import { useState, useEffect } from "react";
 import TimerIcon from "../../../../../../assets/Layout/timer.svg";
@@ -23,12 +24,16 @@ const Timer = ({ finishDate }) => {
   });
 
   return (
-    <TimerStyles style={{ marginTop: "15px", alignItems: "flex-start" }}>
-      <Text color="grey">Next event in:</Text>
-      <Text
-        color="#C2B3C4"
-        weight="semi-bold"
-      >{`${hours}:${minutes}:${seconds}`}</Text>
+    <TimerStyles style={{ display: "flex" }}>
+      <Img src={TimerIcon} alt="timer-icon" />
+      <TimerContainer>
+        <Text color="grey">Next event in:</Text>
+        <Text color="#C2B3C4" weight="semi-bold">{`${
+          hours < 10 ? `0${hours}` : hours
+        }h:${minutes < 10 ? `0${minutes}` : minutes}m:${
+          seconds < 10 ? `0${seconds}` : seconds
+        }s`}</Text>
+      </TimerContainer>
     </TimerStyles>
   );
 };

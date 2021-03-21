@@ -1,9 +1,9 @@
 import moment from "moment";
 
-export const dummyEmail = "gurel.cem374@hotmail.com";
-export const dummyPassword = "tilko2000";
-export const firstName = "Cem";
-export const lastName = "Gurel";
+export const dummyEmail = "test@test.com";
+export const dummyPassword = "test1234";
+export const firstName = "Tester";
+export const lastName = "Test";
 
 //charts
 export const data = {
@@ -26,4 +26,4 @@ export const data = {
 };
 
 //Timer
-export const dummyTimerData = moment().add(1, "week");
+export const dummyTimerData = moment().add(1, "day");

@@ -8,7 +8,7 @@ export default styled(Container)`
   background: ${({ theme }) => theme.dashboard.backgroundPrimaryColor};
   border-radius: ${({ theme }) => theme.borderRadius};
   width: 100%;
-  max-width: 220px;
+  max-width: 250px;
   height: 122px;
 `;
 
@@ -20,8 +20,8 @@ export const ProgressBar = styled(CircularProgress)`
 `;
 
 export const Img = styled.img`
-  top: 45px;
-  left: 70px;
+  margin-left: 18px;
+  margin-top: 2px;
   position: absolute;
   width: 40px;
   height: 40px;
