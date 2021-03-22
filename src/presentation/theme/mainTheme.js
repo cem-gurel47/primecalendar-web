@@ -18,6 +18,8 @@ const mainTheme = {
   paddingHorizontalMobile: "30px",
   paddingVerticalMobile: "15px",
 
+  cardPadding: "20px",
+
   headerHeightMax: "75px",
   headerHeightMin: "60px",
 

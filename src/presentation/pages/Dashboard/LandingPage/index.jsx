@@ -11,11 +11,11 @@ import Distribution from "./Charts/Distribution";
 import Doughnut from "./Charts/Doughnut";
 import Progress from "./Charts/Progress";
 import Timer from "./Charts/Timer";
+import Event from "./Charts/Event";
 import { dailyData, weeklyData } from "../../../../dummyData";
 
 const DashboardLandingPage = () => {
   const [data, setData] = useState(dailyData);
-  console.log(data.dummyTimerData, data.progress);
 
   return (
     <DashboardLandingPageStyles>
@@ -39,6 +39,15 @@ const DashboardLandingPage = () => {
             />
             <Text color={data === dailyData ? "white" : "grey"}>Daily</Text>
           </Container>
+        </Column>
+        <Column span={12} xl={8} align="start" data-aos="zoom-in">
+          <Event status={1} type={1} activity="Dune" />
+        </Column>
+        <Column span={12} xl={8} align="start" data-aos="zoom-in">
+          <Event status={2} type={2} activity="Workout" />
+        </Column>
+        <Column span={12} xl={8} align="start" data-aos="zoom-in">
+          <Event status={3} type={4} activity="CSI 2101 Midterm 2" />
         </Column>
         <Column span={12} xl={9} align="start">
           <ChartCard

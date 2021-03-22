@@ -10,6 +10,7 @@ const Timer = ({ finishDate }) => {
   const [secondsRemained, setSecondsRemained] = useState(
     isValid ? finishDate.diff(moment()) / 1000 : -1
   );
+
   const hours = Math.floor(secondsRemained / 3600); //convert seconds to hours
   const minutes = Math.floor((secondsRemained % 3600) / 60); //convert seconds to minutes
   const seconds = Math.floor(secondsRemained - (3600 * hours + 60 * minutes));
