@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Text } from "../../../components/Typography/styles";
 import { Switch as switcher } from "antd";
 import Card from "../../Auth/LoginPage/LoginCard/styles";
+
 export default styled.div`
   background: ${({ theme }) => theme.dashboard.contentColor};
   padding: ${({ theme }) =>

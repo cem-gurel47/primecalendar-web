@@ -129,3 +129,23 @@ export const weeklyData = {
     labels: dailyData.distribution.labels,
   },
 };
+
+export const eventOne = {
+  type: 1,
+  activity: "Dune",
+  startTime: "10:00",
+  endTime: "11:00",
+};
+export const eventTwo = {
+  type: 3,
+  activity: "Workout",
+  startTime: moment().format("HH:mm"),
+  endTime: moment().add(1, "hour").format("HH:mm"),
+};
+
+export const eventThree = {
+  type: 4,
+  activity: "CSI 2520 Ders",
+  startTime: "10:00",
+  endTime: "11:00",
+};

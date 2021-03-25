@@ -8,6 +8,7 @@ export default styled(Column)`
   width: 100%;
   background: ${({ theme }) => theme.dashboard.backgroundPrimaryColor};
   border-radius: ${({ theme }) => theme.borderRadius};
+  transition: ${({ theme }) => theme.transition};
 `;
 
 export const Title = styled(text)`

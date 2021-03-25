@@ -12,7 +12,13 @@ import Doughnut from "./Charts/Doughnut";
 import Progress from "./Charts/Progress";
 import Timer from "./Charts/Timer";
 import Event from "./Charts/Event";
-import { dailyData, weeklyData } from "../../../../dummyData";
+import {
+  dailyData,
+  weeklyData,
+  eventOne,
+  eventTwo,
+  eventThree,
+} from "../../../../dummyData";
 
 const DashboardLandingPage = () => {
   const [data, setData] = useState(dailyData);
@@ -41,13 +47,13 @@ const DashboardLandingPage = () => {
           </Container>
         </Column>
         <Column span={12} xl={8} align="start" data-aos="zoom-in">
-          <Event status={1} type={1} activity="Dune" />
+          <Event status={1} event={eventOne} />
         </Column>
         <Column span={12} xl={8} align="start" data-aos="zoom-in">
-          <Event status={2} type={2} activity="Workout" />
+          <Event status={2} event={eventTwo} />
         </Column>
         <Column span={12} xl={8} align="start" data-aos="zoom-in">
-          <Event status={3} type={4} activity="CSI 2101 Midterm 2" />
+          <Event status={3} event={eventThree} />
         </Column>
         <Column span={12} xl={9} align="start">
           <ChartCard
