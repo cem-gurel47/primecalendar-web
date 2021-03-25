@@ -3,7 +3,7 @@ import { Container } from "../../../../../components/Grid/styles";
 import { CircularProgress } from "@material-ui/core";
 
 export default styled(Container)`
-  padding: 20px;
+  padding: ${({ theme }) => theme.cardPadding};
   align-items: center;
   background: ${({ theme }) => theme.dashboard.backgroundPrimaryColor};
   border-radius: ${({ theme }) => theme.borderRadius};
